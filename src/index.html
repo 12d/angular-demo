@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta charset="UTF-8">
+    <title>
+        Angluar 2 Demo
+    </title>
+
+</head>
+<body>
+<my-app>Loading...</my-app>
+<script src="../node_modules/systemjs/dist/system.src.js"></script>
+<script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+<script src="../node_modules/angular2/bundles/router.dev.js"></script>
+<script src="../node_modules/angular2/bundles/http.dev.js"></script>
+<script>
+    System.config({
+        packages: {'app': {defaultExtension: 'js'}}
+    });
+    System.import('app/app');
+</script>
+</body>
+</html>
